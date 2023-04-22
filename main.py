@@ -1,8 +1,10 @@
+# import library
 from tkinter import *
 from tkinter import messagebox
 import base64
 import os
 
+# create function decrypt
 def decrypt():
     password=code.get()
     
@@ -28,7 +30,8 @@ def decrypt():
         
     elif password!="1234":
         messagebox.showerror("encryption","Invalid Password")
-    
+
+# create function encrypt  
 def encrypt():
     password=code.get()
     
@@ -54,9 +57,8 @@ def encrypt():
         
     elif password!="1234":
         messagebox.showerror("encryption","Invalid Password")
-    
-    
-        
+
+# create main app
 def main_screen():
     
     global screen
